@@ -1,9 +1,13 @@
 ﻿module Problem1
 
-open Math
+let isFactorOf3Or5 n =
+    match n with
+        | n when n % 3 = 0 -> true
+        | n when n % 5 = 0 -> true
+        | _ -> false
 
 let problem1 () =
     [1..999]
-        |> Seq.filter(fun n -> n % 5 = 0 || n % 3 = 0)
+        |> Seq.filter isFactorOf3Or5
         |> Seq.sum
         |> sprintf "%i"

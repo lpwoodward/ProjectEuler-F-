@@ -1,6 +1,6 @@
 ﻿module Program
 
-open Problem4
+open Problem1
 open System.Diagnostics
 
 let solveProblemWithTiming prob =
@@ -11,8 +11,8 @@ let solveProblemWithTiming prob =
 
 [<EntryPoint>]
 let main argv = 
-    printfn "Solving %s ..." "Problem 4"
-    let solution, elapsedTime = solveProblemWithTiming problem4
+    printfn "Solving %s ..." "Problem 1"
+    let solution, elapsedTime = solveProblemWithTiming problem1
     printfn "Solution: %s" solution
     printfn "Took %ims" elapsedTime
     System.Console.ReadKey() |> ignore
